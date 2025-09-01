@@ -37,15 +37,14 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
-name: Snake Game
-on:
+
   schedule:
     - cron: "0 */5 * * *"
 
   workflow_dispatch:
 
 jobs:
-  build:
+
     runs-on: ubuntu-latest
     steps:
 
